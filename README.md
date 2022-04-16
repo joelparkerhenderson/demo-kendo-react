@@ -134,6 +134,35 @@ function App() {
 export default App;
 ```
 
+## Add Kendo theme
+
+Add the Kendo theme that is the default:
+
+```sh
+yarn add @progress/kendo-theme-default
+```
+
+Edit `src/App.js`. Import the CSS file immediately before your existing `App.css` import.
+
+```js
+import '@progress/kendo-theme-default/dist/all.css'
+```
+
+Kendo offers multiple themes: default, bootstrap, material. Kendo also enables
+you to create your own theme. The KendoReact UI components enable you to change
+your app look and feel by modifying a SASS file or CSS file, or even swap themes
+for your entire app by changing a single import.
+
+## Add Kendo licensing
+
+Kendo requires a licensing package:
+
+```sh
+yarn add @progress/kendo-licensing
+git add -A
+git commit -m "Add Kendo licensing"
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
