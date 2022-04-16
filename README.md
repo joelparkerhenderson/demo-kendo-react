@@ -163,6 +163,20 @@ git add -A
 git commit -m "Add Kendo licensing"
 ```
 
+## Add KendoReact Globalization
+
+[The KendoReact Globalization](https://www.telerik.com/kendo-react-ui/components/intl/) process combines the translation of component messages (localization) with their adaptation to specific cultures (internationalization).
+
+[The KendoReact Internationalization (i18n)](https://www.telerik.com/kendo-react-ui/components/intl/i18n/) package that applies the desired cultures by providing services and pipes for the parsing and formatting of dates and numbers.
+
+[The KendoReact Localization (l10n)](https://www.telerik.com/kendo-react-ui/components/intl/l10n/) package enables you to adapt a component to a different locale by providing options for translating its messages or by enabling its right-to-left support.
+
+```sh
+yarn add @progress/kendo-react-intl
+git add -A
+git commit -m "Add KendoReact Globalization"
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1975,6 +1975,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@progress/kendo-react-intl@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "@progress/kendo-react-intl@npm:5.2.0"
+  dependencies:
+    "@telerik/kendo-intl": ^2.1.0
+    prop-types: ^15.6.0
+  peerDependencies:
+    "@progress/kendo-licensing": ^1.0.1
+    react: ^16.8.2 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.2 || ^17.0.0 || ^18.0.0
+  checksum: 13777ee1d62527a00cb901155755caf1c0961dc9a5b0a0f44dd683c6055238a6e0b0f41c2d8b27a44a0f3343fac1b1ddbbf6ae60d3a440886c7795ed6280bf21
+  languageName: node
+  linkType: hard
+
 "@progress/kendo-theme-default@npm:^5.3.1":
   version: 5.3.1
   resolution: "@progress/kendo-theme-default@npm:5.3.1"
@@ -2205,6 +2219,13 @@ __metadata:
     "@svgr/plugin-svgo": ^5.5.0
     loader-utils: ^2.0.0
   checksum: 540391bd63791625d26d6b5e0dd3c716ef51176bfba53bf0979a1ac4781afd2672f4bef2d76cf3d9cdc8e9ee61bda6863ed405a237b10406633ede4cd524f1cc
+  languageName: node
+  linkType: hard
+
+"@telerik/kendo-intl@npm:^2.1.0":
+  version: 2.3.1
+  resolution: "@telerik/kendo-intl@npm:2.3.1"
+  checksum: 329a11edc75cb5ec8f8e13d6034998b40a2b60678d5cb611937ccd5d9335848389722b3bb2675795f686d2156c8c896a56eb786199f7288feeef8046074590d9
   languageName: node
   linkType: hard
 
@@ -4753,6 +4774,7 @@ __metadata:
   resolution: "demo-kendo-react@workspace:."
   dependencies:
     "@progress/kendo-licensing": ^1.2.2
+    "@progress/kendo-react-intl": ^5.2.0
     "@progress/kendo-theme-default": ^5.3.1
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^13.0.0
@@ -9806,7 +9828,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.0, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:

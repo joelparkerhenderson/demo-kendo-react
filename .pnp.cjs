@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@progress/kendo-licensing", "npm:1.2.2"],\
+            ["@progress/kendo-react-intl", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:5.2.0"],\
             ["@progress/kendo-theme-default", "npm:5.3.1"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\
             ["@testing-library/react", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:13.1.1"],\
@@ -3464,6 +3465,38 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@progress/kendo-react-intl", [\
+        ["npm:5.2.0", {\
+          "packageLocation": "./.yarn/cache/@progress-kendo-react-intl-npm-5.2.0-7dbf008d90-13777ee1d6.zip/node_modules/@progress/kendo-react-intl/",\
+          "packageDependencies": [\
+            ["@progress/kendo-react-intl", "npm:5.2.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:5.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/@progress-kendo-react-intl-virtual-eb9ce51af5/0/cache/@progress-kendo-react-intl-npm-5.2.0-7dbf008d90-13777ee1d6.zip/node_modules/@progress/kendo-react-intl/",\
+          "packageDependencies": [\
+            ["@progress/kendo-react-intl", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:5.2.0"],\
+            ["@progress/kendo-licensing", "npm:1.2.2"],\
+            ["@telerik/kendo-intl", "npm:2.3.1"],\
+            ["@types/progress__kendo-licensing", null],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.0.0"],\
+            ["react-dom", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:18.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@progress/kendo-licensing",\
+            "@types/progress__kendo-licensing",\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@progress/kendo-theme-default", [\
         ["npm:5.3.1", {\
           "packageLocation": "./.yarn/cache/@progress-kendo-theme-default-npm-5.3.1-a0f87fee80-84919841d4.zip/node_modules/@progress/kendo-theme-default/",\
@@ -3769,6 +3802,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@svgr/plugin-jsx", "npm:5.5.0"],\
             ["@svgr/plugin-svgo", "npm:5.5.0"],\
             ["loader-utils", "npm:2.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@telerik/kendo-intl", [\
+        ["npm:2.3.1", {\
+          "packageLocation": "./.yarn/cache/@telerik-kendo-intl-npm-2.3.1-46578ebb2c-329a11edc7.zip/node_modules/@telerik/kendo-intl/",\
+          "packageDependencies": [\
+            ["@telerik/kendo-intl", "npm:2.3.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7153,6 +7195,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["demo-kendo-react", "workspace:."],\
             ["@progress/kendo-licensing", "npm:1.2.2"],\
+            ["@progress/kendo-react-intl", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:5.2.0"],\
             ["@progress/kendo-theme-default", "npm:5.3.1"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\
             ["@testing-library/react", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:13.1.1"],\
