@@ -1431,7 +1431,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
   version: 7.17.9
   resolution: "@babel/runtime@npm:7.17.9"
   dependencies:
@@ -2000,7 +2000,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@progress/kendo-react-buttons@npm:5.2.0":
+"@progress/kendo-react-animation@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "@progress/kendo-react-animation@npm:5.2.0"
+  dependencies:
+    "@progress/kendo-react-common": 5.2.0
+    prop-types: ^15.6.0
+    react-transition-group: ^4.4.2
+  peerDependencies:
+    "@progress/kendo-licensing": ^1.0.1
+    react: ^16.8.2 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.2 || ^17.0.0 || ^18.0.0
+  checksum: b0ec0e33ed2178043d3a5efdae12d0c2943e11e3c5b302beed010ae79ded15c0b661fc8836457d2ad86fe11eb0deca0d1a5b3dfe0a7a3511b759dd2f65efddbf
+  languageName: node
+  linkType: hard
+
+"@progress/kendo-react-buttons@npm:5.2.0, @progress/kendo-react-buttons@npm:^5.2.0":
   version: 5.2.0
   resolution: "@progress/kendo-react-buttons@npm:5.2.0"
   dependencies:
@@ -2048,6 +2063,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@progress/kendo-react-dropdowns@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "@progress/kendo-react-dropdowns@npm:5.2.0"
+  dependencies:
+    "@progress/kendo-react-common": 5.2.0
+    "@progress/kendo-react-labels": 5.2.0
+    "@progress/kendo-react-popup": 5.2.0
+    prop-types: ^15.6.0
+  peerDependencies:
+    "@progress/kendo-licensing": ^1.0.1
+    "@progress/kendo-react-buttons": ^5.0.0
+    "@progress/kendo-react-intl": ^5.0.0
+    "@progress/kendo-react-treeview": ^5.0.0
+    react: ^16.8.2 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.2 || ^17.0.0 || ^18.0.0
+  checksum: f56e84f22e4425b98d0e2a847d544f40c2f86f4f41fbea16b68222ff1640a78c90bae6ba4f33741e3c878efab05ab31e9a3afaa36f85907dff255c120bfccc00
+  languageName: node
+  linkType: hard
+
 "@progress/kendo-react-intl@npm:^5.2.0":
   version: 5.2.0
   resolution: "@progress/kendo-react-intl@npm:5.2.0"
@@ -2089,6 +2123,21 @@ __metadata:
     react: ^16.8.2 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.2 || ^17.0.0 || ^18.0.0
   checksum: b0b5fdbb09b3de49157da4e33a2e6e075b0d22376b1400930651924a1f15465fbe561350905b3fcf98838dc68202dc05c5b133e87dc949cbcefa1131fa7a9a7e
+  languageName: node
+  linkType: hard
+
+"@progress/kendo-react-treeview@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "@progress/kendo-react-treeview@npm:5.2.0"
+  dependencies:
+    "@progress/kendo-react-common": 5.2.0
+    prop-types: ^15.6.0
+  peerDependencies:
+    "@progress/kendo-licensing": ^1.0.1
+    "@progress/kendo-react-animation": ^5.0.0
+    react: ^16.8.2 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.2 || ^17.0.0 || ^18.0.0
+  checksum: 0329373d36cd0a31646a84d2abf4693eaa43284c0b4cd2057ad9839e9ab41a38c4d741e6e18d2e5bab65460508632e9a85f6dd64fdb708ec531d8b674409b795
   languageName: node
   linkType: hard
 
@@ -4877,8 +4926,12 @@ __metadata:
   resolution: "demo-kendo-react@workspace:."
   dependencies:
     "@progress/kendo-licensing": ^1.2.2
+    "@progress/kendo-react-animation": ^5.2.0
+    "@progress/kendo-react-buttons": ^5.2.0
     "@progress/kendo-react-dateinputs": ^5.2.0
+    "@progress/kendo-react-dropdowns": ^5.2.0
     "@progress/kendo-react-intl": ^5.2.0
+    "@progress/kendo-react-treeview": ^5.2.0
     "@progress/kendo-theme-default": ^5.3.1
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^13.0.0
@@ -4886,6 +4939,7 @@ __metadata:
     eslint-config-react-app: ^7.0.1
     react: ^18.0.0
     react-dom: ^18.0.0
+    react-router-dom: 6
     react-scripts: 5.0.1
     web-vitals: ^2.1.0
   languageName: unknown
@@ -5022,6 +5076,16 @@ __metadata:
   dependencies:
     utila: ~0.4
   checksum: ea52fe303f5392e48dea563abef0e6fb3a478b8dbe3c599e99bb5d53981c6c38fc4944e56bb92a8ead6bb989d10b7914722ae11febbd2fd0910e33b9fc4aaa77
+  languageName: node
+  linkType: hard
+
+"dom-helpers@npm:^5.0.1":
+  version: 5.2.1
+  resolution: "dom-helpers@npm:5.2.1"
+  dependencies:
+    "@babel/runtime": ^7.8.7
+    csstype: ^3.0.2
+  checksum: 863ba9e086f7093df3376b43e74ce4422571d404fc9828bf2c56140963d5edf0e56160f9b2f3bb61b282c07f8fc8134f023c98fd684bddcb12daf7b0f14d951c
   languageName: node
   linkType: hard
 
@@ -6404,6 +6468,15 @@ __metadata:
   bin:
     he: bin/he
   checksum: 3d4d6babccccd79c5c5a3f929a68af33360d6445587d628087f39a965079d84f18ce9c3d3f917ee1e3978916fc833bb8b29377c3b403f919426f91bc6965e7a7
+  languageName: node
+  linkType: hard
+
+"history@npm:^5.2.0":
+  version: 5.3.0
+  resolution: "history@npm:5.3.0"
+  dependencies:
+    "@babel/runtime": ^7.7.6
+  checksum: d73c35df49d19ac172f9547d30a21a26793e83f16a78386d99583b5bf1429cc980799fcf1827eb215d31816a6600684fba9686ce78104e23bd89ec239e7c726f
   languageName: node
   linkType: hard
 
@@ -9932,7 +10005,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.0, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.0, prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -10118,6 +10191,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-router-dom@npm:6":
+  version: 6.3.0
+  resolution: "react-router-dom@npm:6.3.0"
+  dependencies:
+    history: ^5.2.0
+    react-router: 6.3.0
+  peerDependencies:
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  checksum: 77603a654f8a8dc7f65535a2e5917a65f8d9ffcb06546d28dd297e52adcc4b8a84377e0115f48dca330b080af2da3e78f29d590c89307094d36927d2b1751ec3
+  languageName: node
+  linkType: hard
+
+"react-router@npm:6.3.0":
+  version: 6.3.0
+  resolution: "react-router@npm:6.3.0"
+  dependencies:
+    history: ^5.2.0
+  peerDependencies:
+    react: ">=16.8"
+  checksum: 7be673f5e72104be01e6ab274516bdb932efd93305243170690f6560e3bd1035dd1df3d3c9ce1e0f452638a2529f43a1e77dcf0934fc8031c4783da657be13ca
+  languageName: node
+  linkType: hard
+
 "react-scripts@npm:5.0.1":
   version: 5.0.1
   resolution: "react-scripts@npm:5.0.1"
@@ -10182,6 +10279,21 @@ __metadata:
   bin:
     react-scripts: bin/react-scripts.js
   checksum: 92afa2f245c7092ccc97d5609dc7a2130616262e34da7f15072d9442e2d2e1d4909a91022abd1faac1336eb17c5525a10d9bd43e1ae374c7ec941ca20addca68
+  languageName: node
+  linkType: hard
+
+"react-transition-group@npm:^4.4.2":
+  version: 4.4.2
+  resolution: "react-transition-group@npm:4.4.2"
+  dependencies:
+    "@babel/runtime": ^7.5.5
+    dom-helpers: ^5.0.1
+    loose-envify: ^1.4.0
+    prop-types: ^15.6.2
+  peerDependencies:
+    react: ">=16.6.0"
+    react-dom: ">=16.6.0"
+  checksum: b67bf5b3e86dbab72d658b9a52a3589e5960583ab28c7c66272427d8fe30d4c7de422d5046ae96bd2683cdf80cc3264b2516f5ce80cae1dbe6cf3ca6dda392c5
   languageName: node
   linkType: hard
 
