@@ -57,6 +57,25 @@ git add doc
 git commit -m "Add documentation directories"
 ```
 
+## Adjust for Kendo
+
+See <https://www.telerik.com/kendo-react-ui/getting-started/>
+
+Note that Create React App uses React functions, whereas the Kendo React UI getting started guide shows React components. Our demo prefers React functions over React components.
+
+### Remove logo
+
+Edit `App.js`. Delete the line that does the import of `logo.svg` and the line of JSX that renders the `img`.
+
+Edit `App.css`. Delete the lines that reference `logo.svg`.
+
+Delete `src/logo.svg`.
+
+```sh
+git add -A
+git commit -m "Remove logo"
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
