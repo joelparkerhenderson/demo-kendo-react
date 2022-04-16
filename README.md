@@ -93,6 +93,47 @@ git add -A
 git commit -m "Replace App div contents"
 ```
 
+### Import Component
+
+Add import line:
+
+```js
+import React, {Component} from 'react';
+```
+
+```sh
+git add -A
+git commit -m "Import Component"
+```
+
+### Remove App.css contents
+
+Remove the contents of `src/App.css`:
+
+```sh
+echo "" > src/App.css
+git add -A
+git commit -m "Remove App.css contents"
+```
+
+### Result
+
+The result is the file `App.js` with this code:
+
+```js
+import React, {Component} from 'react';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+    </div>
+  );
+}
+
+export default App;
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
