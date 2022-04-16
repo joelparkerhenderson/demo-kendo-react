@@ -76,6 +76,23 @@ git add -A
 git commit -m "Remove logo"
 ```
 
+### Replace App div
+
+Edit `src/App.js`.
+
+Replace the App div and its contents with this:
+
+```js
+<div className="App">
+    <h1>Demo Kendo React</h1>
+</div>
+```
+
+```sh
+git add -A
+git commit -m "Replace App div contents"
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
