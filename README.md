@@ -177,6 +177,48 @@ git add -A
 git commit -m "Add KendoReact Globalization"
 ```
 
+## Add KendoReact Calendar and dependencies
+
+[The KendoReact Calendar](https://www.telerik.com/kendo-react-ui/components/dateinputs/calendar/) is a form component that represents a graphical Gregorian calendar and supports the selection of and navigation between dates and date ranges for scheduling appointments. 
+
+[The KendoReact Date Inputs](https://www.telerik.com/kendo-react-ui/components/dateinputs/) enable the user to pick up dates for scheduling appointments.
+
+```sh
+yarn add @progress/kendo-react-dateinputs 
+```
+
+Edit `src/App.js`. 
+
+Import:
+
+```js
+import { Calendar } from '@progress/kendo-react-dateinputs'
+```
+
+Redo the App div so it displays the calendar:
+
+```js
+<div className="App">
+    <div className="App">
+      <h1>Calendar</h1>
+      <Calendar/>
+    </div>      
+</div>
+```
+
+Take a screenshot and save it here:
+
+```sh
+doc/screenshots/calendar.png
+```
+
+Commit:
+
+```sh
+git add -A 
+git commit -m "Add calendar"
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

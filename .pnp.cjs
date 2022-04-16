@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@progress/kendo-licensing", "npm:1.2.2"],\
+            ["@progress/kendo-react-dateinputs", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:5.2.0"],\
             ["@progress/kendo-react-intl", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:5.2.0"],\
             ["@progress/kendo-theme-default", "npm:5.3.1"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\
@@ -3455,12 +3456,146 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@progress/kendo-date-math", [\
+        ["npm:1.5.6", {\
+          "packageLocation": "./.yarn/cache/@progress-kendo-date-math-npm-1.5.6-208f2c1e52-1b43676ef3.zip/node_modules/@progress/kendo-date-math/",\
+          "packageDependencies": [\
+            ["@progress/kendo-date-math", "npm:1.5.6"],\
+            ["tslib", "npm:1.14.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@progress/kendo-draggable-common", [\
+        ["npm:0.2.0-dev.202203111250", {\
+          "packageLocation": "./.yarn/cache/@progress-kendo-draggable-common-npm-0.2.0-dev.202203111250-ab512cb5a6-1229ea6148.zip/node_modules/@progress/kendo-draggable-common/",\
+          "packageDependencies": [\
+            ["@progress/kendo-draggable-common", "npm:0.2.0-dev.202203111250"],\
+            ["tslib", "npm:1.14.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@progress/kendo-licensing", [\
         ["npm:1.2.2", {\
           "packageLocation": "./.yarn/unplugged/@progress-kendo-licensing-npm-1.2.2-df68678e97/node_modules/@progress/kendo-licensing/",\
           "packageDependencies": [\
             ["@progress/kendo-licensing", "npm:1.2.2"],\
             ["jsonwebtoken", "npm:8.5.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@progress/kendo-popup-common", [\
+        ["npm:1.9.0", {\
+          "packageLocation": "./.yarn/cache/@progress-kendo-popup-common-npm-1.9.0-762487d8ce-324d70398a.zip/node_modules/@progress/kendo-popup-common/",\
+          "packageDependencies": [\
+            ["@progress/kendo-popup-common", "npm:1.9.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@progress/kendo-react-buttons", [\
+        ["npm:5.2.0", {\
+          "packageLocation": "./.yarn/cache/@progress-kendo-react-buttons-npm-5.2.0-809fa64679-b5deddb588.zip/node_modules/@progress/kendo-react-buttons/",\
+          "packageDependencies": [\
+            ["@progress/kendo-react-buttons", "npm:5.2.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:0e039ddfec8eef6496ef5a8570c2ee6235d74ff6ef577f439a63a0d954fd36f6f9c8d5882a6f672ca2111068d20ac7b263303ee0878606e3629c7f282b5e848b#npm:5.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/@progress-kendo-react-buttons-virtual-8e0344f7ed/0/cache/@progress-kendo-react-buttons-npm-5.2.0-809fa64679-b5deddb588.zip/node_modules/@progress/kendo-react-buttons/",\
+          "packageDependencies": [\
+            ["@progress/kendo-react-buttons", "virtual:0e039ddfec8eef6496ef5a8570c2ee6235d74ff6ef577f439a63a0d954fd36f6f9c8d5882a6f672ca2111068d20ac7b263303ee0878606e3629c7f282b5e848b#npm:5.2.0"],\
+            ["@progress/kendo-licensing", "npm:1.2.2"],\
+            ["@progress/kendo-react-common", "virtual:0e039ddfec8eef6496ef5a8570c2ee6235d74ff6ef577f439a63a0d954fd36f6f9c8d5882a6f672ca2111068d20ac7b263303ee0878606e3629c7f282b5e848b#npm:5.2.0"],\
+            ["@progress/kendo-react-popup", "virtual:0e039ddfec8eef6496ef5a8570c2ee6235d74ff6ef577f439a63a0d954fd36f6f9c8d5882a6f672ca2111068d20ac7b263303ee0878606e3629c7f282b5e848b#npm:5.2.0"],\
+            ["@types/progress__kendo-licensing", null],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.0.0"],\
+            ["react-dom", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:18.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@progress/kendo-licensing",\
+            "@types/progress__kendo-licensing",\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@progress/kendo-react-common", [\
+        ["npm:5.2.0", {\
+          "packageLocation": "./.yarn/cache/@progress-kendo-react-common-npm-5.2.0-1d2c2755be-686f2d8bc1.zip/node_modules/@progress/kendo-react-common/",\
+          "packageDependencies": [\
+            ["@progress/kendo-react-common", "npm:5.2.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:0e039ddfec8eef6496ef5a8570c2ee6235d74ff6ef577f439a63a0d954fd36f6f9c8d5882a6f672ca2111068d20ac7b263303ee0878606e3629c7f282b5e848b#npm:5.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/@progress-kendo-react-common-virtual-15c7791960/0/cache/@progress-kendo-react-common-npm-5.2.0-1d2c2755be-686f2d8bc1.zip/node_modules/@progress/kendo-react-common/",\
+          "packageDependencies": [\
+            ["@progress/kendo-react-common", "virtual:0e039ddfec8eef6496ef5a8570c2ee6235d74ff6ef577f439a63a0d954fd36f6f9c8d5882a6f672ca2111068d20ac7b263303ee0878606e3629c7f282b5e848b#npm:5.2.0"],\
+            ["@progress/kendo-draggable-common", "npm:0.2.0-dev.202203111250"],\
+            ["@progress/kendo-licensing", "npm:1.2.2"],\
+            ["@types/progress__kendo-licensing", null],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.0.0"],\
+            ["react-dom", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:18.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@progress/kendo-licensing",\
+            "@types/progress__kendo-licensing",\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@progress/kendo-react-dateinputs", [\
+        ["npm:5.2.0", {\
+          "packageLocation": "./.yarn/cache/@progress-kendo-react-dateinputs-npm-5.2.0-22472f121e-c0521235de.zip/node_modules/@progress/kendo-react-dateinputs/",\
+          "packageDependencies": [\
+            ["@progress/kendo-react-dateinputs", "npm:5.2.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:5.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/@progress-kendo-react-dateinputs-virtual-0e039ddfec/0/cache/@progress-kendo-react-dateinputs-npm-5.2.0-22472f121e-c0521235de.zip/node_modules/@progress/kendo-react-dateinputs/",\
+          "packageDependencies": [\
+            ["@progress/kendo-react-dateinputs", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:5.2.0"],\
+            ["@progress/kendo-date-math", "npm:1.5.6"],\
+            ["@progress/kendo-licensing", "npm:1.2.2"],\
+            ["@progress/kendo-react-buttons", "virtual:0e039ddfec8eef6496ef5a8570c2ee6235d74ff6ef577f439a63a0d954fd36f6f9c8d5882a6f672ca2111068d20ac7b263303ee0878606e3629c7f282b5e848b#npm:5.2.0"],\
+            ["@progress/kendo-react-common", "virtual:0e039ddfec8eef6496ef5a8570c2ee6235d74ff6ef577f439a63a0d954fd36f6f9c8d5882a6f672ca2111068d20ac7b263303ee0878606e3629c7f282b5e848b#npm:5.2.0"],\
+            ["@progress/kendo-react-intl", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:5.2.0"],\
+            ["@progress/kendo-react-labels", "virtual:0e039ddfec8eef6496ef5a8570c2ee6235d74ff6ef577f439a63a0d954fd36f6f9c8d5882a6f672ca2111068d20ac7b263303ee0878606e3629c7f282b5e848b#npm:5.2.0"],\
+            ["@progress/kendo-react-popup", "virtual:0e039ddfec8eef6496ef5a8570c2ee6235d74ff6ef577f439a63a0d954fd36f6f9c8d5882a6f672ca2111068d20ac7b263303ee0878606e3629c7f282b5e848b#npm:5.2.0"],\
+            ["@types/progress__kendo-licensing", null],\
+            ["@types/progress__kendo-react-intl", null],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.0.0"],\
+            ["react-dom", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:18.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@progress/kendo-licensing",\
+            "@progress/kendo-react-intl",\
+            "@types/progress__kendo-licensing",\
+            "@types/progress__kendo-react-intl",\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3479,6 +3614,75 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@progress/kendo-react-intl", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:5.2.0"],\
             ["@progress/kendo-licensing", "npm:1.2.2"],\
             ["@telerik/kendo-intl", "npm:2.3.1"],\
+            ["@types/progress__kendo-licensing", null],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.0.0"],\
+            ["react-dom", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:18.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@progress/kendo-licensing",\
+            "@types/progress__kendo-licensing",\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@progress/kendo-react-labels", [\
+        ["npm:5.2.0", {\
+          "packageLocation": "./.yarn/cache/@progress-kendo-react-labels-npm-5.2.0-2e2bd34ac9-cef7133aa4.zip/node_modules/@progress/kendo-react-labels/",\
+          "packageDependencies": [\
+            ["@progress/kendo-react-labels", "npm:5.2.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:0e039ddfec8eef6496ef5a8570c2ee6235d74ff6ef577f439a63a0d954fd36f6f9c8d5882a6f672ca2111068d20ac7b263303ee0878606e3629c7f282b5e848b#npm:5.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/@progress-kendo-react-labels-virtual-e909284828/0/cache/@progress-kendo-react-labels-npm-5.2.0-2e2bd34ac9-cef7133aa4.zip/node_modules/@progress/kendo-react-labels/",\
+          "packageDependencies": [\
+            ["@progress/kendo-react-labels", "virtual:0e039ddfec8eef6496ef5a8570c2ee6235d74ff6ef577f439a63a0d954fd36f6f9c8d5882a6f672ca2111068d20ac7b263303ee0878606e3629c7f282b5e848b#npm:5.2.0"],\
+            ["@progress/kendo-licensing", "npm:1.2.2"],\
+            ["@progress/kendo-react-common", "virtual:0e039ddfec8eef6496ef5a8570c2ee6235d74ff6ef577f439a63a0d954fd36f6f9c8d5882a6f672ca2111068d20ac7b263303ee0878606e3629c7f282b5e848b#npm:5.2.0"],\
+            ["@progress/kendo-react-intl", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:5.2.0"],\
+            ["@types/progress__kendo-licensing", null],\
+            ["@types/progress__kendo-react-intl", null],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.0.0"],\
+            ["react-dom", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:18.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@progress/kendo-licensing",\
+            "@progress/kendo-react-intl",\
+            "@types/progress__kendo-licensing",\
+            "@types/progress__kendo-react-intl",\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@progress/kendo-react-popup", [\
+        ["npm:5.2.0", {\
+          "packageLocation": "./.yarn/cache/@progress-kendo-react-popup-npm-5.2.0-6650e9624a-b0b5fdbb09.zip/node_modules/@progress/kendo-react-popup/",\
+          "packageDependencies": [\
+            ["@progress/kendo-react-popup", "npm:5.2.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:0e039ddfec8eef6496ef5a8570c2ee6235d74ff6ef577f439a63a0d954fd36f6f9c8d5882a6f672ca2111068d20ac7b263303ee0878606e3629c7f282b5e848b#npm:5.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/@progress-kendo-react-popup-virtual-b329af77ca/0/cache/@progress-kendo-react-popup-npm-5.2.0-6650e9624a-b0b5fdbb09.zip/node_modules/@progress/kendo-react-popup/",\
+          "packageDependencies": [\
+            ["@progress/kendo-react-popup", "virtual:0e039ddfec8eef6496ef5a8570c2ee6235d74ff6ef577f439a63a0d954fd36f6f9c8d5882a6f672ca2111068d20ac7b263303ee0878606e3629c7f282b5e848b#npm:5.2.0"],\
+            ["@progress/kendo-licensing", "npm:1.2.2"],\
+            ["@progress/kendo-popup-common", "npm:1.9.0"],\
+            ["@progress/kendo-react-common", "virtual:0e039ddfec8eef6496ef5a8570c2ee6235d74ff6ef577f439a63a0d954fd36f6f9c8d5882a6f672ca2111068d20ac7b263303ee0878606e3629c7f282b5e848b#npm:5.2.0"],\
             ["@types/progress__kendo-licensing", null],\
             ["@types/react", null],\
             ["@types/react-dom", null],\
@@ -7195,6 +7399,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["demo-kendo-react", "workspace:."],\
             ["@progress/kendo-licensing", "npm:1.2.2"],\
+            ["@progress/kendo-react-dateinputs", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:5.2.0"],\
             ["@progress/kendo-react-intl", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:5.2.0"],\
             ["@progress/kendo-theme-default", "npm:5.3.1"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\

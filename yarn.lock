@@ -1964,6 +1964,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@progress/kendo-date-math@npm:^1.4.0":
+  version: 1.5.6
+  resolution: "@progress/kendo-date-math@npm:1.5.6"
+  dependencies:
+    tslib: ^1.7.0
+  checksum: 1b43676ef3de186753fd34a85616099649469214f7ec3cd96e1cb4c36d65dbf2235efdac4b4018270f32edec72de09020b58b6ae0841f0aae200dfc37d14a309
+  languageName: node
+  linkType: hard
+
+"@progress/kendo-draggable-common@npm:dev":
+  version: 0.2.0-dev.202203111250
+  resolution: "@progress/kendo-draggable-common@npm:0.2.0-dev.202203111250"
+  dependencies:
+    tslib: ^1.7.0
+  checksum: 1229ea6148cd5ed4388ad5b331bceda35d2cf53a754ecc80083bd6dfbc9f9106d2ed40da4c944e1c80128b13920025d59f465ea71d5197ec0eb953db865aee90
+  languageName: node
+  linkType: hard
+
 "@progress/kendo-licensing@npm:^1.2.2":
   version: 1.2.2
   resolution: "@progress/kendo-licensing@npm:1.2.2"
@@ -1972,6 +1990,61 @@ __metadata:
   bin:
     kendo-ui-license: bin/kendo-ui-license.js
   checksum: 39504afd02b7628507fbbbd4f2e02cfae3e0e147057a82b03363ebd05bf3c4460f79bac1295c8e967c0cee1af055a2aff4d9a5f5718a43e429883dd3a41ce162
+  languageName: node
+  linkType: hard
+
+"@progress/kendo-popup-common@npm:1.9.0":
+  version: 1.9.0
+  resolution: "@progress/kendo-popup-common@npm:1.9.0"
+  checksum: 324d70398ae04e540d16f7d2a4babc56223e1882f5c70cf9ad0c5a6f98060775de78358979080f9741c01ab8fa86ff8780865210432cb1d4460b1dc7932b2c0a
+  languageName: node
+  linkType: hard
+
+"@progress/kendo-react-buttons@npm:5.2.0":
+  version: 5.2.0
+  resolution: "@progress/kendo-react-buttons@npm:5.2.0"
+  dependencies:
+    "@progress/kendo-react-common": 5.2.0
+    "@progress/kendo-react-popup": 5.2.0
+    prop-types: ^15.6.0
+  peerDependencies:
+    "@progress/kendo-licensing": ^1.0.1
+    react: ^16.8.2 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.2 || ^17.0.0 || ^18.0.0
+  checksum: b5deddb5882564838b0de4a00f99b5958dfa088f35bbfb4d31d30b2b5b8c3405b52bc52c98c4d7bb8c0efe2455c2ce5e40cc121fd8fd4b854853ceac60c3208e
+  languageName: node
+  linkType: hard
+
+"@progress/kendo-react-common@npm:5.2.0":
+  version: 5.2.0
+  resolution: "@progress/kendo-react-common@npm:5.2.0"
+  dependencies:
+    "@progress/kendo-draggable-common": dev
+    prop-types: ^15.6.0
+  peerDependencies:
+    "@progress/kendo-licensing": ^1.0.1
+    react: ^16.8.2 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.2 || ^17.0.0 || ^18.0.0
+  checksum: 686f2d8bc13e776518a3af03ce683926b03c9db929f77855e7205cb7b09041b16f8bf5d0e2b04000e91bcb1282eeac15064d511c065cbdac8198e4798889947e
+  languageName: node
+  linkType: hard
+
+"@progress/kendo-react-dateinputs@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "@progress/kendo-react-dateinputs@npm:5.2.0"
+  dependencies:
+    "@progress/kendo-date-math": ^1.4.0
+    "@progress/kendo-react-buttons": 5.2.0
+    "@progress/kendo-react-common": 5.2.0
+    "@progress/kendo-react-labels": 5.2.0
+    "@progress/kendo-react-popup": 5.2.0
+    prop-types: ^15.6.0
+  peerDependencies:
+    "@progress/kendo-licensing": ^1.0.1
+    "@progress/kendo-react-intl": ^5.0.0
+    react: ^16.8.2 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.2 || ^17.0.0 || ^18.0.0
+  checksum: c0521235deeaf8b03537635ba9283b9fca21241f7e68daaa98f3d4935c2d338e0019557757fea56f9ed4c662497c0e3f30310ed68f6c3e435222d47255550b4b
   languageName: node
   linkType: hard
 
@@ -1986,6 +2059,36 @@ __metadata:
     react: ^16.8.2 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.2 || ^17.0.0 || ^18.0.0
   checksum: 13777ee1d62527a00cb901155755caf1c0961dc9a5b0a0f44dd683c6055238a6e0b0f41c2d8b27a44a0f3343fac1b1ddbbf6ae60d3a440886c7795ed6280bf21
+  languageName: node
+  linkType: hard
+
+"@progress/kendo-react-labels@npm:5.2.0":
+  version: 5.2.0
+  resolution: "@progress/kendo-react-labels@npm:5.2.0"
+  dependencies:
+    "@progress/kendo-react-common": 5.2.0
+    prop-types: ^15.6.0
+  peerDependencies:
+    "@progress/kendo-licensing": ^1.0.1
+    "@progress/kendo-react-intl": ^5.0.0
+    react: ^16.8.2 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.2 || ^17.0.0 || ^18.0.0
+  checksum: cef7133aa4f85b2c0ff64073f5370391e0b95c81713b1a94370ea6d2054f61a33c7544a6d0b7371cbc94d641bfc2ee9a773f7c501d81119002b1a77f8523c36f
+  languageName: node
+  linkType: hard
+
+"@progress/kendo-react-popup@npm:5.2.0":
+  version: 5.2.0
+  resolution: "@progress/kendo-react-popup@npm:5.2.0"
+  dependencies:
+    "@progress/kendo-popup-common": 1.9.0
+    "@progress/kendo-react-common": 5.2.0
+    prop-types: ^15.6.0
+  peerDependencies:
+    "@progress/kendo-licensing": ^1.0.1
+    react: ^16.8.2 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.2 || ^17.0.0 || ^18.0.0
+  checksum: b0b5fdbb09b3de49157da4e33a2e6e075b0d22376b1400930651924a1f15465fbe561350905b3fcf98838dc68202dc05c5b133e87dc949cbcefa1131fa7a9a7e
   languageName: node
   linkType: hard
 
@@ -4774,6 +4877,7 @@ __metadata:
   resolution: "demo-kendo-react@workspace:."
   dependencies:
     "@progress/kendo-licensing": ^1.2.2
+    "@progress/kendo-react-dateinputs": ^5.2.0
     "@progress/kendo-react-intl": ^5.2.0
     "@progress/kendo-theme-default": ^5.3.1
     "@testing-library/jest-dom": ^5.14.1
@@ -11483,7 +11587,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^1.8.1":
+"tslib@npm:^1.7.0, tslib@npm:^1.8.1":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: dbe628ef87f66691d5d2959b3e41b9ca0045c3ee3c7c7b906cc1e328b39f199bb1ad9e671c39025bd56122ac57dfbf7385a94843b1cc07c60a4db74795829acd
