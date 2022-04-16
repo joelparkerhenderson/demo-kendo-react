@@ -1964,6 +1964,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@progress/kendo-theme-default@npm:^5.3.1":
+  version: 5.3.1
+  resolution: "@progress/kendo-theme-default@npm:5.3.1"
+  checksum: 84919841d4f9830377976598e1e8babed44d71981bbfa194fbbcec43123c05c15cd765524365155feda297ecf788775c073d0bc893caf322d04651b4e6ce1db1
+  languageName: node
+  linkType: hard
+
 "@rollup/plugin-babel@npm:^5.2.0":
   version: 5.3.1
   resolution: "@rollup/plugin-babel@npm:5.3.1"
@@ -4727,6 +4734,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "demo-kendo-react@workspace:."
   dependencies:
+    "@progress/kendo-theme-default": ^5.3.1
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^13.0.0
     "@testing-library/user-event": ^13.2.1

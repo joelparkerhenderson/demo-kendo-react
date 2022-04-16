@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@progress/kendo-theme-default", "npm:5.3.1"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\
             ["@testing-library/react", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:13.1.1"],\
             ["@testing-library/user-event", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:13.5.0"],\
@@ -3448,6 +3449,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "webpack-hot-middleware",\
             "webpack-plugin-serve",\
             "webpack"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@progress/kendo-theme-default", [\
+        ["npm:5.3.1", {\
+          "packageLocation": "./.yarn/cache/@progress-kendo-theme-default-npm-5.3.1-a0f87fee80-84919841d4.zip/node_modules/@progress/kendo-theme-default/",\
+          "packageDependencies": [\
+            ["@progress/kendo-theme-default", "npm:5.3.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7122,6 +7132,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["demo-kendo-react", "workspace:."],\
+            ["@progress/kendo-theme-default", "npm:5.3.1"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\
             ["@testing-library/react", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:13.1.1"],\
             ["@testing-library/user-event", "virtual:9d7d9b36fdda41554fde7fdd80284fbddb00431c030519a57bdf3e312a78e0df26140928c41b7009700387ff26c181a78993d1e703e311c9f2faf6397ebf6940#npm:13.5.0"],\
