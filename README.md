@@ -4,23 +4,25 @@ This demonstrates how to create a web application that uses:
 
 * [KendoReact UI](https://www.telerik.com/kendo-react-ui/) components for calendars, grids, and more.
 
+* [KendoReact getting started repository](https://github.com/telerik/kendo-react-getting-started)
+
 * [React](https://reactjs.org/) JavaScript web application framework.
 
 * [ReactRouter](https://reactrouter.com/) routing library for links, navigation, URLs.
 
 * [Yarn](https://yarnpkg.com) package manager for managing dependencies.
 
-Related links:
+Prerequisites:
 
-* [KendoReact getting started repository](https://github.com/telerik/kendo-react-getting-started)
+* [Node](doc/prerequisties/node.md)
 
-## Create React app
+* [Yarn](doc/prerequisties/yarn.md)
 
-Use these links if you need them:
-
-[Prerequisites](doc/prerequisties.md)
+* [React devtools](doc/prerequisties/react-devtools.md)
 
 [Troubleshooting](doc/troubleshooting)
+
+## Create React app
 
 Create the demo by using Yarn:
  
@@ -47,6 +49,39 @@ webpack compiled successfully
 ```
 
 The command should launch your browser and open the app home page at http://localhost:3000/
+
+## Fix root
+
+React 18 introduces a new root API with a concurrent renderer.
+
+<https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html#updates-to-client-rendering-apis>
+
+Edit `src/index.js`.
+
+Change this…
+
+```js
+import { render } from 'react-dom';
+```
+
+…to this:
+
+```js
+import { createRoot } from 'react-dom/client';
+```
+
+Change this…
+
+```js
+const rootElement = document.getElementById("root");
+```
+
+…to this:
+
+```js
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement); // createRoot(rootElement!) if you use TypeScript
+```
 
 ## Simplify: Replace App div
 
@@ -165,9 +200,9 @@ git commit -m "Add routes/hello"
 
 Edit `src/App.js`.
 
-Use the `Link` component to create a link to the URL "/hello".
+Use the `Link` component to create a link to the URL "/hello". We prefer to show our navigation links by using the HTML tag `nav` and `ul` and `li` in order to improve the app accessibility such as for screen readers.
 
-Use the `Outlet` component to nest routes.
+Use the `Outlet` component in order to nest routes. This is in order to preserve CSS layouts, which we will want long term.
 
 ```js
 import './App.css';
@@ -181,7 +216,9 @@ function App() {
     <div className="App">
       <h1>Demo</h1>
       <nav>
-        <Link to="/hello">Hello</Link>
+        <ul>
+          <li><Link to="/hello">Hello</Link></li>
+        </ul>
       </nav>
       <Outlet />
     </div>
@@ -205,6 +242,7 @@ The file has code like this:
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -227,7 +265,6 @@ Edit `src/index.js`.
 Add imports:
 
 ```js
-import { render } from 'react-dom';
 import {
   BrowserRouter,
   Routes,
@@ -236,48 +273,27 @@ import {
 import Hello from './routes/hello';
 ```
 
-Replace the `root.render` call with nested routes:
+Update the `root.render` call with the browser router and nesting routes:
 
 ```js
-render(
+root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="hello" element={<Hello />} />
       </Route>
     </Routes>
-  </BrowserRouter>,
-  rootElement
+  </BrowserRouter>
 );
 ```
 
 Browse <http://localhost:3000/hello> and you should see a web page that says "Hello".
-
-### Add a link
-
-Edit `src/App.js`.
-
-Add import:
-
-```js
-import { Link } from 'react-router-dom';
-```
-
-Add a link:
-
-```js
-<div className="App">
-    <h1>Demo</h1>
-    <Link to="/example">Example</Link> |{" "}
-</div>
-```
 
 ## Adjust for Kendo
 
 See <https://www.telerik.com/kendo-react-ui/getting-started/>
 
 Note that Create React App uses React functions, whereas the Kendo React UI getting started guide shows React components. Our demo prefers React functions over React components.
-
 
 ### Import Component
 
@@ -291,7 +307,6 @@ import React, {Component} from 'react';
 git add -A
 git commit -m "Import Component"
 ```
-
 
 ## Add Kendo theme
 
@@ -346,24 +361,35 @@ git commit -m "Add KendoReact Globalization"
 yarn add @progress/kendo-react-dateinputs 
 ```
 
-Edit `src/App.js`. 
-
-Import:
+Create `src/routes/demo-calendar.js`:
 
 ```js
-import { Calendar } from '@progress/kendo-react-dateinputs'
-```
+import React, {Component} from 'react';
+import { Calendar } from '@progress/kendo-react-dateinputs';
 
-Redo the App div so it displays the calendar:
-
-```js
-<div className="App">
-    <div className="App">
-      <h1>Calendar</h1>
+export default function DemoCalendar() {
+  return (
+    <main>
+      <h2>Demo Calendar</h2>
       <Calendar/>
-    </div>      
-</div>
+    </main>
+  );
+}
 ```
+
+Edit `src/App.js` to add link:
+
+```js
+<Link to="/demo-calendar">Demo Calendar</Link>
+```
+
+Edit `src/index.js` to add route:
+
+```js
+<Route path="demo-calendar" element={<DemoCalendar />} />
+```
+
+Browse <https://localhost:3000/demo-calendar> and you should see the demo calendar.
 
 If you wish, take a screenshot and save it here:
 
@@ -532,7 +558,6 @@ ReactDOM.render(
     document.querySelector('my-app')
 );
 
-
 ## Add KendoReact Dropdowns, TreeView, Buttons, Animation
 
 [The KendoReact Dropdowns](https://www.telerik.com/kendo-react-ui/components/dropdowns/) allow you to choose from a predefined list of options.
@@ -596,7 +621,6 @@ Commit:
 git add -A 
 git commit -m "Add calendar"
 ```
-
 
 # Getting Started with Create React App
 
