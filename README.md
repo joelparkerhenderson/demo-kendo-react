@@ -1,3 +1,51 @@
+# Demo KendoReact UI
+
+This demonstrates how to create a web application that uses:
+
+* [KendoReact UI](https://www.telerik.com/kendo-react-ui/) components for calendars, grids, and more.
+
+* [React](https://reactjs.org/) JavaScript web application framework
+
+* [Yarn](https://yarnpkg.com) package manager
+
+Related links:
+
+* [KendoReact getting started repository](https://github.com/telerik/kendo-react-getting-started)
+
+## Create React app
+
+Use these links if you need them:
+
+[Prerequisites](doc/prerequisties.md)
+
+[Troubleshooting](doc/troubleshooting)
+
+Create the demo by using Yarn:
+ 
+```sh
+yarn create react-app demo-kendo-react &&
+cd demo-kendo-react &&
+yarn start
+```
+
+Output:
+
+```sh
+Compiled successfully!
+
+You can now view demo-kendo-react in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://10.235.89.154:3000
+
+Note that the development build is not optimized.
+To create a production build, use yarn build.
+
+webpack compiled successfully
+```
+
+The command should launch your browser and open the app home page at http://localhost:3000/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
