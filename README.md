@@ -46,6 +46,17 @@ webpack compiled successfully
 
 The command should launch your browser and open the app home page at http://localhost:3000/
 
+## Add our directories
+
+Create our preferred documentation directories:
+
+```sh
+mkdir -p doc/{decisions,prerequisites,screenshots,troubleshooting}
+touch doc/{decisions,prerequisites,screenshots,troubleshooting}/.keep
+git add doc
+git commit -m "Add documentation directories"
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
